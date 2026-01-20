@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Full-stack Engineer & Digital Architect",
+  title: "Full-stack Engineer",
   description: "Building scalable backend systems and pixel-perfect frontends",
 };
 
