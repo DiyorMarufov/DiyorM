@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Full-stack Engineer",
+  title: "Diyor Marufov",
   description: "Building scalable backend systems and pixel-perfect frontends",
 };
 
