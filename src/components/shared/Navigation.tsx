@@ -87,7 +87,7 @@ export default function Navigation() {
             : "border-slate-200/60 bg-white/90",
         )}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
