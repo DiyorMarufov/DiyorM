@@ -80,7 +80,7 @@ export default function Navigation() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className={cn(
-          "fixed top-4 right-3 z-50 rounded-full border px-6 py-3 backdrop-blur-lg transition-all duration-300",
+          "fixed left-1/2 -translate-x-1/2 z-50 rounded-full border px-6 py-3 backdrop-blur-lg transition-all duration-300",
           scrolled && "bg-white/95 shadow-lg",
           theme === "dark"
             ? "border-slate-800/60 bg-slate-900"
