@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Code2, Palette, Rocket, Sparkles } from "lucide-react";
+import { ArrowDown, Code2, Palette, Rocket } from "lucide-react";
+import profileImg from "@/shared/assets/profile-image.jpg";
+import Image from "next/image";
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -92,6 +94,36 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="space-y-8"
         >
+          {/* Profile Image */}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex justify-center mb-8"
+          >
+            <div className="relative">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-linear-to-br from-indigo-500 via-purple-500 to-indigo-400 p-1">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                  <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center overflow-hidden">
+                    <Image src={profileImg} alt="" />
+                  </div>
+                </div>
+              </div>
+              {/* Decorative ring */}
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute -inset-2 rounded-full border-2 border-dashed border-indigo-500/20"
+              />
+            </div>
+          </motion.div>
+
           {/* Main Title */}
           <motion.h1
             initial={{ y: 20, opacity: 0 }}

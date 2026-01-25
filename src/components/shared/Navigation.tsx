@@ -8,6 +8,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 
 const navItems = [
   { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -80,7 +81,7 @@ export default function Navigation() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className={cn(
-          "fixed left-1/2 -translate-x-1/2 z-50 rounded-full border px-6 py-3 backdrop-blur-lg transition-all duration-300",
+          "fixed min-[767px]:left-1/2 max-[767px]:right-2 top-1 min-[767px]:-translate-x-1/2 z-50 rounded-full border px-6 py-3 backdrop-blur-lg transition-all duration-300",
           scrolled && "bg-white/95 shadow-lg",
           theme === "dark"
             ? "border-slate-800/60 bg-slate-900"
